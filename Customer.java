@@ -21,7 +21,7 @@ public class Customer {
 	 }
 	 
 	 
-	 public double totalHotelCost(){
+	 public double totalCost(){
 	 double res = 0;
 	 	for (int i=0; i < nbBookings; i++) 
 	 		if (myBooking[i] instanceof Hotel) 
@@ -30,7 +30,7 @@ public class Customer {
 	 }
 	 
 	 
-	 public Hotel mostExpensiveHotel(){
+	 public Hotel ExpensiveHotel(){
 	 Hotel max = null; 
 	 	for (int i=0; i<nbBookings; i++) { 
 	 		if (myBooking[i] instanceof Hotel) { 
